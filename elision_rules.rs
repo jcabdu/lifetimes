@@ -1,4 +1,5 @@
-/* LIFETIMES: Rather than ensuring that a type has the behavior we want, lifetimes ensure that references are valid as long as we need them to be.
+/* main.rs 
+LIFETIMES: Rather than ensuring that a type has the behavior we want, lifetimes ensure that references are valid as long as we need them to be.
 - We must annotate lifetimes when the lifetimes of references could be related in a few different ways. 
 - Rust requires us to annotate the relationships using generic lifetime parameters to ensure the actual references used at runtime will definitely be valid.
 - The compiler has a borrow checker that compares scopes to determine whether all borrows are valid.    */ 
