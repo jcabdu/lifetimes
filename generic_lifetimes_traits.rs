@@ -1,7 +1,7 @@
-/* To remove duplication of code - write code without repetition that works in many different situations
+/* To remove duplication of code - write code without repetition that works in many different situations -
 - Generic type parameters T let you apply the code to different types -
 - Traits and trait bounds, like Display, ensure that even though the types are generic, they’ll have the behavior the code needs - 
-- Generic lifetime parameters or lifetime annotations ensure that this flexible code won’t have any dangling references   */ 
+- Generic lifetime parameters or lifetime annotations ensure that this flexible code won’t have any dangling references -   */ 
 
 fn main() {
 use std::fmt::Display; 
