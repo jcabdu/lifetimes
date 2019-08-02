@@ -6,8 +6,8 @@
 fn main() {
 use std::fmt::Display; 
 
-fn longest_with_an_announcement <'a, T> (x: &'a str, y: &'a str, ann: T) -> &'a str         // lifetimes are a type of generic, thus their declarations go in the same list <>
-    where T: Display                                                                         // T can be of any type that implements the Display trait
+fn longest_with_an_announcement <'a, T> (x: &'a str, y: &'a str, ann: T) -> &'a str         // lifetimes are a type of generic, thus their declarations go in the same list <> -
+    where T: Display                                                                        // T can be of any type that implements the Display trait -
 {
     println! ("Announcement: {}", ann); 
     if x.len() > y.len() {
@@ -25,7 +25,7 @@ fn longest_with_an_announcement <'a, T> (x: &'a str, y: &'a str, ann: T) -> &'a 
     println!("The longest string is {}.", result);
 }
 
-// And all of this analysis happens at compile time, which doesn’t affect runtime performance!
+// And all of this analysis happens at compile time, which doesn’t affect runtime performance! -
 
 
 
